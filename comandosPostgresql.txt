@@ -1,14 +1,10 @@
-CREATE TABLE pessoa1(
-	id_pessoa INTEGER PRIMARY KEY,
+/*CREATE TABLE pessoa1(
+	id_pessoa SERIAL PRIMARY KEY,
 	nome VARCHAR(100) NOT NULL,
 	cpf VARCHAR(11) NOT NULL
-);
+);*/
 
-SELECT * FROM pessoa1
-
-INSERT INTO PESSOA1(id_pessoa, nome, cpf) VALUES (1, 'Teste', '12345678911')
-
-CREATE TABLE pessoa(
+/*CREATE TABLE pessoa(
 	id_pessoa INTEGER PRIMARY KEY,
 	nome VARCHAR(100) NOT NULL,
 	cpf VARCHAR(11) NOT NULL
@@ -17,8 +13,16 @@ CREATE TABLE pessoa(
 CREATE TABLE contato(
 	id_contato INTEGER PRIMARY KEY,
 	telefone VARCHAR(20) NOT NULL,
-	email VARCHAR(100) NOT NULL,
+	email VARCHAR(100),
 	id_pessoa INTEGER NOT NULL,
-	FOREIGN KEY (id_pessoa)REFERENCES(id_pessoa)
-);
+	FOREIGN KEY (id_pessoa)REFERENCES pessoa(id_pessoa)
+);*/
+
+-- INSERT INTO PESSOA(id_pessoa, nome, cpf) VALUES (1, 'Teste 1', '12345678911');
+
+-- INSERT INTO CONTATO(id_contato, telefone, email, id_pessoa ) VALUES (1, '71995863136', 'vvv@gmail.com',1);
+
+-- SELECT * FROM pessoa
+
+-- SELECT * FROM contato
 
