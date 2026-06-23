@@ -211,3 +211,13 @@ id_mensagem:number, conteudo:string, data_mensagem:string, id_forum:number, id_a
 9, 'Gostei da parte de criptografia.', '2025-05-08', 9, 9
 10, 'AWS parece muito promissor.', '2025-05-20', 10, 10
 }
+
+ALTER TABLE Pessoas
+ALTER COLUMN cpf TYPE VARCHAR(14);
+
+ALTER TABLE Matriculas
+ADD CONSTRAINT chk_progresso
+CHECK (progresso >= 0 AND progresso <= 100);
+
+ALTER TABLE Pessoas
+ADD telefone VARCHAR(20);
