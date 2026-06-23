@@ -50,6 +50,7 @@ id_professor:number, especialidade:string, id_pessoa:number
 8, 'Gestao de Projetos', 18
 9, 'Seguranca da Informacao', 19
 10, 'Computacao em Nuvem', 20
+11, 'Engenharia de Software', 1
 }
 
 Categorias = {
